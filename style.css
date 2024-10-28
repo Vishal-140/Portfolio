@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  monospace;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(6, 6, 6);
+    color: aliceblue;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+/* Base navigation styles */
+#nav {
+    background-color: rgb(17, 22, 36);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Decreased padding for a smaller nav size */
+    position: fixed; /* Keep it fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    backdrop-filter: none; /* No blur by default */
+    z-index: 1000; /* Ensure it stays on top */
+    transition: transform 0.3s ease, backdrop-filter 0.3s ease, background-color 0.3s ease; /* Smooth transitions for navbar */
+}
+
+
+.hidden {
+    transform: translateY(-100%); /* Hide the navbar by moving it up */
+}
+
+
+/* Styles for the blurred effect */
+#nav.blurred {
+    backdrop-filter: blur(5px); /* Blur effect */
+    background-color: rgba(0, 0, 0, 0.8); /* Change background color slightly */
+}
+
+
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+
+#part2 {
+    transition: all 0.5s ease;
+    display: flex;
+    gap: 50px;
+
+}
+
+
+#part2 a {
+    text-decoration: none;
+    color: white;
+}
+
+#part2 h4 {
+    margin: 0;
+    padding: 10px;
+}
+
+.view-resume h4 {
+    color: black;
+    background-color: royalblue;
+    border: 0.5px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-resume h4:hover {
+    color: royalblue;
+    background-color: white;
+}
+
+/* Hamburger Icon - Hidden on larger screens */
+#hamburger-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    #nav {
+        padding: 10px 15px; /* Decreased padding for tablets */
+    }
+
+    #part2 a {
+        font-size: 14px; /* Adjust font size for tablet view */
+    }
+}
+
+/* Mobile Design */
+@media (max-width: 480px) {
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px; /* Decreased padding for mobile */
+    }
+
+    /* Place hamburger icon on the right side */
+    #hamburger-icon {
+        display: block;
+        position: absolute;
+        right: 15px; /* Adjusted position */
+        top: 15px; /* Adjusted position */
+    }
+
+    /* Initially hide the menu links */
+    #part2 {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px; /* Decreased gap between items */
+    }
+
+    /* Show menu links when menu is open */
+    #part2.show {
+        display: flex;
+    }
+
+    #part2 h4 {
+        text-align: center;
+        width: 100%;
+        font-size: 12px; /* Decreased font size for mobile */
+    }
+}
+
+
+
+
+
+/* landing */
+/* Fullscreen setup */
+#page1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    
+    padding: 0 5%;
+}
+
+.greeting-container {
+    flex: 0 0 60%;
+    text-align: left;
+}
+
+#page1 h2 {
+    font-size: 40px;
+    color: royalblue;
+    margin: 0;
+    height: 50px;
+}
+
+#page1 h1 {
+    font-size: 50px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+#page1 h4 {
+    font-size: 24px;
+    color: #d4d4d4;
+    margin-top: 10px;
+}
+
+.photo-container {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+/* Responsive Design */
+@media (max-width: 768px) {
+    #page1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 5% 5%;
+    }
+
+    .photo-container {
+        order: -1; /* Display profile photo first */
+        flex: 1;
+        margin-top: 10px;
+    }
+
+    .greeting-container {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    #page1 h2 {
+        font-size: 30px;
+    }
+
+    #page1 h1 {
+        font-size: 40px;
+    }
+
+    #page1 h4 {
+        font-size: 20px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-container {
+        order: -1; /* Ensure profile photo appears before greeting */
+    }
+
+    #page1 h2 {
+        font-size: 24px;
+    }
+
+    #page1 h1 {
+        font-size: 32px;
+    }
+
+    #page1 h4 {
+        font-size: 18px;
+    }
+
+    .profile-photo {
+        margin-top: 25px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+/* Projects */
+#page2 {
+    padding: 50px;
+    background-color: rgb(22, 108, 161);
+    text-align: center;
+}
+
+#page2 h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #555;
+    flex-grow: 1; /* Pushes content above the button */
+}
+
+.launch-button {
+    display: inline-block;
+    margin-top: auto; /* Keeps the button at the bottom */
+    padding: 10px 20px;
+    background-color: #1d72b8;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.launch-button:hover {
+    background-color: #155a8a;
+}
+
+
+
+/* Skills Section */
+#page3 {
+    padding: 50px;
+    background-color: rgb(34, 43, 69);
+    text-align: center;
+    color: #ffffff;
+}
+
+#page3 h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-category {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.skill-category h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #222;
+    text-align: center;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.skill-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.skill-item p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: 150px; /* Adjust height for social icons and text */
+    background-color: rgb(22, 108, 161);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#social-icons {
+    margin-bottom: 10px;
+}
+
+#social-icons a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+#social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+#footer h4 {
+    color: white;
+    margin-top: 10px;
+}
