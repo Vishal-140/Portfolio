@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,191 +9,343 @@
 
     <title>Portfolio : Vishal Kumar Chaurasia</title>
 </head>
+
 <body>
     <div id="nav">
         <a href="#page1">
             <img src="./Assest/icon1.png" alt="VKC icon" class="profile-icon">
         </a>
-    
+
         <!-- Hamburger Icon for Mobile -->
         <div id="hamburger-icon" onclick="toggleMenu()">
             &#9776;
         </div>
-    
+
         <!-- Navigation Links -->
         <div id="part2">
-            <a href="#page2"><h4>Projects</h4></a>
-            <a href="#page3"><h4>Skills</h4></a>
-            <a href="#footer"><h4>Contact</h4></a>
+            <a href="#page2">
+                <h4>Projects</h4>
+            </a>
+            <a href="#page3">
+                <h4>Skills</h4>
+            </a>
+            <a href="#footer">
+                <h4>Contact</h4>
+            </a>
             <a href="./Assest/Vishal_CV.pdf" target="_blank" class="view-resume">
                 <h4>Download Resume</h4>
             </a>
         </div>
     </div>
-    
-    
-    
-<!-- Portfolio Header Section -->
-<div id="page1">
-    <div class="greeting-container">
-        <h2 id="greeting">Hello!</h2>
-        <h1>Vishal Kumar Chaurasia</h1>
-        <h4>A passionate Full-Stack Developer</h4>
-    </div>
-    <div class="photo-container">
-        <img src="./Assest/VKC.jpg" alt="Vishal's Photo" class="profile-photo">
-    </div>
-</div>
 
 
 
-<!-- Projects Section -->
-<div id="page2">
-    <h1>PROJECTS</h1>
-    
-    <div class="card-container">
-        
-        <div class="card">
-            <img src="./Assest/obys.png" alt="OBYS AGENCY">
-            <div class="card-content">
-                <h3>OBYS AGENCY</h3>
-                <p>HTML, CSS, JavaScript, GSAP, Shery.js, Locomotive Scroll, Three.js</p>
-                <a href="https://vishal-140.github.io/Obys-Agency/" target="_blank" class="launch-button">Launch Project</a>
-            </div>
+    <!-- Portfolio Header Section -->
+    <div id="page1">
+        <div class="greeting-container">
+            <h2 id="greeting">Hello!</h2>
+            <h1>Vishal Kumar Chaurasia</h1>
+            <h4>A passionate Full-Stack Developer</h4>
         </div>
-
-        <div class="card">
-            <img src="./Assest/shopper.png" alt="SHOPPER SHOES">
-            <div class="card-content">
-                <h3>SHOPPER SHOES</h3>
-                <p>HTML, CSS, JavaScript</p>
-                <a href="https://vishal-140.github.io/Shopper-Shoes/home.html" target="_blank" class="launch-button">Launch Project</a>
-            </div>
-        </div>
-
-        
-        <div class="card">
-            <img src="./Assest/spotify.png" alt="SPOTIFY">
-            <div class="card-content">
-                <h3>SPOTIFY</h3>
-                <p>HTML, CSS, JavaScript</p>
-                <a href="https://vishal-140.github.io/Spotify-clone/" target="_blank" class="launch-button">Launch Project</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./Assest/3D.png" alt="3D Animated">
-            <div class="card-content">
-                <h3>3D Animated</h3>
-                <p>HTML, CSS, JavaScript</p>
-                <a href="https://vishal-140.github.io/3D-Animation/" target="_blank" class="launch-button">Launch Project</a>
-            </div>
+        <div class="photo-container">
+            <img src="./Assest/VKC.jpg" alt="Vishal's Photo" class="profile-photo">
         </div>
     </div>
-</div>
+
+    <!-- About Me Section -->
+    <div id="about" class="about-section">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <p>
+                I’m Vishal Kumar Chaurasia, a passionate Full-Stack Developer focused on creating scalable and
+                user-centric web and mobile applications. With hands-on experience in React.js, Node.js, Express.js,
+                MongoDB, Firebase, and Kotlin, I thrive on turning complex problems into elegant solutions.<br><br>
+                I'm currently pursuing a B.Tech in Computer Science & Engineering at Lovely Professional University,
+                where I’m continuously refining my skills in full-stack development, AI-powered systems, and Android
+                development. During my internship at Gokboru Tech, I developed secure UI components and optimized API
+                integrations for enhanced performance.<br><br>
+                My projects include an AI-enabled Task Management System built using the MERN stack and Gemini API, and
+                CoderStats — a full-stack analytics platform that tracks coding progress from LeetCode, CodeForces, and
+                GeeksforGeeks. I’m always eager to explore emerging technologies, build impactful solutions, and
+                collaborate with forward-thinking teams.
+            </p>
+        </div>
+    </div>
 
 
-<!-- SKILLS -->
-<div id="page3">
-    <h1>SKILLS</h1>
-    
-    <div class="skills-container">
-        <div class="skill-category">
-            <h3>Web Development</h3>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/410/100/png-transparent-web-development-html-responsive-web-design-logo-javascript-html-angle-web-design-text-thumbnail.png" alt="HTML Icon">
-                <p>HTML</p>
+
+
+    <!-- Projects Section -->
+    <div id="page2">
+        <h1>PROJECTS</h1>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="./Assest/task.png" alt="TASK MANAGEMENT">
+                <div class="card-content">
+                    <h3>TASK MANAGEMENT</h3>
+                    <p>MERN Stack</p>
+                    <a href="https://github.com/Vishal-140/Task-Management-Frontend" target="_blank"
+                        class="launch-button">Launch Project</a>
+                </div>
             </div>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/393/49/png-transparent-css-logo-thumbnail.png" alt="CSS Icon">
-                <p>CSS</p>
+
+            <div class="card">
+                <img src="./Assest/coderstats.png" alt="CODERSTATS">
+                <div class="card-content">
+                    <h3>CODERSTATS</h3>
+                    <p>React.js, Firebase</p>
+                    <a href="https://github.com/Vishal-140/CoderStats" target="_blank" class="launch-button">Launch
+                        Project</a>
+                </div>
             </div>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/640/199/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail.png" alt="JavaScript Icon">
-                <p>JavaScript</p>
+
+            <div class="card">
+                <img src="./Assest/obys.png" alt="OBYS AGENCY">
+                <div class="card-content">
+                    <h3>OBYS AGENCY</h3>
+                    <p>HTML, CSS, JavaScript, GSAP, Shery.js, Locomotive Scroll, Three.js</p>
+                    <a href="https://vishal-140.github.io/Obys-Agency/" target="_blank" class="launch-button">Launch
+                        Project</a>
+                </div>
             </div>
-            <div class="skill-item">
-                <img src="https://w1.pngwing.com/pngs/385/9/png-transparent-angular-red-getting-started-with-angular-rxjs-debugging-progressive-web-apps-singlepage-application-web-application-software-framework-thumbnail.png" alt="Angular Icon">
-                <p>Angular</p>
+
+            <div class="card">
+                <img src="./Assest/shopper.png" alt="SHOPPER SHOES">
+                <div class="card-content">
+                    <h3>SHOPPER SHOES</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <a href="https://vishal-140.github.io/Shopper-Shoes/home.html" target="_blank"
+                        class="launch-button">Launch Project</a>
+                </div>
             </div>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png" alt="React Icon">
-                <p>React</p>
+
+
+            <div class="card">
+                <img src="./Assest/spotify.png" alt="SPOTIFY">
+                <div class="card-content">
+                    <h3>SPOTIFY</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <a href="https://vishal-140.github.io/Spotify-clone/" target="_blank" class="launch-button">Launch
+                        Project</a>
+                </div>
             </div>
-        </div>
-        
-        <div class="skill-category">
-            <h3>Programming</h3>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/724/306/png-transparent-c-logo-c-programming-language-icon-letter-c-blue-logo-computer-program-thumbnail.png" alt="C Icon">
-                <p>C</p>
-            </div>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue-thumbnail.png" alt="C++ Icon">
-                <p>C++</p>
-            </div>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/405/878/png-transparent-java-logo-java-runtime-environment-computer-icons-java-platform-standard-edition-java-miscellaneous-text-logo-thumbnail.png" alt="Java Icon">
-                <p>Java</p>
-            </div>
-        </div>
-        
-        <div class="skill-category">
-            <h3>Frameworks</h3>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/804/269/png-transparent-bootstrap-hd-logo-thumbnail.png" alt="Bootstrap Icon">
-                <p>Bootstrap</p>
-            </div>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo-thumbnail.png" alt="Tailwind CSS Icon">
-                <p>Tailwind CSS</p>
-            </div>
-        </div>
-        
-        <div class="skill-category">
-            <h3>Familiar With</h3>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/857/611/png-transparent-github-git-hub-logo-icon-thumbnail.png" alt="Git Icon">
-                <p>Git & GitHub</p>
-            </div>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/788/651/png-transparent-code-development-logo-nodejs-logos-icon-thumbnail.png" alt="Node.js Icon">
-                <p>Node.js</p>
-            </div>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/351/692/png-transparent-linux-logo-linux-distribution-tux-gnu-linux-bird-linux-kernel-thumbnail.png" alt="Linux Icon">
-                <p>Linux</p>
-            </div>
-            <div class="skill-item">
-                <img src="https://w7.pngwing.com/pngs/747/798/png-transparent-mysql-logo-mysql-database-web-development-computer-software-dolphin-marine-mammal-animals-text-thumbnail.png" alt="MySQL Icon">
-                <p>MySQL</p>
+
+            <div class="card">
+                <img src="./Assest/3D.png" alt="3D Animated">
+                <div class="card-content">
+                    <h3>3D Animated</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <a href="https://vishal-140.github.io/3D-Animation/" target="_blank" class="launch-button">Launch
+                        Project</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+
+    <!-- SKILLS -->
+    <div id="page3">
+        <h1>SKILLS</h1>
+
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/410/100/png-transparent-web-development-html-responsive-web-design-logo-javascript-html-angle-web-design-text-thumbnail.png"
+                        alt="HTML Icon">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/393/49/png-transparent-css-logo-thumbnail.png" alt="CSS Icon">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/640/199/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail.png"
+                        alt="JavaScript Icon">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://w1.pngwing.com/pngs/385/9/png-transparent-angular-red-getting-started-with-angular-rxjs-debugging-progressive-web-apps-singlepage-application-web-application-software-framework-thumbnail.png"
+                        alt="Angular Icon">
+                    <p>Angular</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png"
+                        alt="React Icon">
+                    <p>React</p>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend and Databases</h3>
+                <div class="skill-item">
+                    <img src="https://w1.pngwing.com/pngs/885/534/png-transparent-green-grass-nodejs-javascript-react-mean-angularjs-logo-symbol-thumbnail.png"
+                        alt="nodejs Icon">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/846/87/png-transparent-mean-solution-stack-express-js-node-js-javascript-github-text-trademark-logo-thumbnail.png"
+                        alt="expressjs Icon">
+                    <p>Express.js</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/63/19/png-transparent-mongodb-database-nosql-postgresql-mongo-text-logo-business-thumbnail.png"
+                        alt="Mongodb Icon">
+                    <p>MongoDB</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/129/910/png-transparent-api-text-application-programming-interface-computer-icons-web-api-computer-programming-thumbnail.png"
+                        alt="Mongodb Icon">
+                    <p>REST API</p>
+                </div>
+
+            </div>
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/724/306/png-transparent-c-logo-c-programming-language-icon-letter-c-blue-logo-computer-program-thumbnail.png"
+                        alt="C Icon">
+                    <p>C</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue-thumbnail.png"
+                        alt="C++ Icon">
+                    <p>C++</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/405/878/png-transparent-java-logo-java-runtime-environment-computer-icons-java-platform-standard-edition-java-miscellaneous-text-logo-thumbnail.png"
+                        alt="Java Icon">
+                    <p>Java</p>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/804/269/png-transparent-bootstrap-hd-logo-thumbnail.png"
+                        alt="Bootstrap Icon">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo-thumbnail.png"
+                        alt="Tailwind CSS Icon">
+                    <p>Tailwind CSS</p>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Familiar With</h3>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/857/611/png-transparent-github-git-hub-logo-icon-thumbnail.png"
+                        alt="Git Icon">
+                    <p>Git & GitHub</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/246/288/png-transparent-firebase-hd-logo-thumbnail.png"
+                        alt="Firebase Icon">
+                    <p>Firebase</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://w7.pngwing.com/pngs/747/798/png-transparent-mysql-logo-mysql-database-web-development-computer-software-dolphin-marine-mammal-animals-text-thumbnail.png"
+                        alt="MySQL Icon">
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="certifications" class="cert-section">
+        <h1>Certifications & Courses</h1>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <h3>Cloud Computing</h3>
+                <p>NPTEL – 2024</p>
+            </div>
+            <div class="cert-card">
+                <h3>Android App Development with Kotlin</h3>
+                <p>Coursera – 2024</p>
+            </div>
+            <div class="cert-card">
+                <h3>Build AI Apps with ChatGPT, Dall-E, and GPT-4</h3>
+                <p>Coursera – 2024</p>
+            </div>
+            <div class="cert-card">
+                <h3>Server side JavaScript with Node.js</h3>
+                <p>Coursera – 2024</p>
+            </div>
+            <div class="cert-card">
+                <h3>Become a Full-Stack Web Developer</h3>
+                <p>LinkedIn Learning – 2023</p>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <div id="footer">
-        
-        <div id="social-icons">
-            <a href="https://www.linkedin.com/in/vishalkrchaurasia/" target="_blank"><img src="https://w7.pngwing.com/pngs/602/665/png-transparent-in-icon-social-media-linkedin-computer-icons-linkedin-blue-text-trademark-thumbnail.png" alt="LinkedIn"></a>
+        <div class="footer-container">
+            <!-- Column 1: Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#page2">Projects</a>
+                <a href="#about">About Me</a>
+                <a href="#page3">Skills</a>
+                <a href="#certifications">Certifications & Courses</a>
+                <a href="./Assest/Vishal_CV.pdf" download>Download Resume</a>
+            </div>
             
-            <a href="https://github.com/Vishal-140/" target="_blank"><img src="https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png" alt="GitHub"></a>
-
+            <!-- Column 2: Contact Form Section -->
+            <div class="footer-contact">
+                <h3>Contact Me</h3>
+                <form action="mailto:vishalkrchaurasia140@gmail.com" method="post" enctype="text/plain">
+                    <input type="email" name="email" placeholder="Your Email" required><br>
+                    <textarea name="message" placeholder="Your Message" required></textarea><br>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+    
+            <!-- Column 3: Social Links Section -->
+            <div class="footer-social">
+                <h3>Find Me On</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vishalkrchaurasia/" target="_blank">
+                        <img src="https://w7.pngwing.com/pngs/602/665/png-transparent-in-icon-social-media-linkedin-computer-icons-linkedin-blue-text-trademark-thumbnail.png" alt="LinkedIn">
+                    </a>
+                    
+                    <a href="https://github.com/Vishal-140" target="_blank">
+                        <img src="https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
         </div>
-        <h4>Copyright©️ 2024 Vishal Kumar Chaurasia</h4>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vishal Kumar Chaurasia. All Rights Reserved.</p>
+        </div>
     </div>
     
-
     
-        
+    
+
+
+
+
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="./script.js"></script>
 </body>
+
 </html>
