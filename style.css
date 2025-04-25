@@ -470,50 +470,56 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.cert-section h1 {
+  }
+  
+  .cert-section h1 {
     font-size: 42px;
     margin-bottom: 40px;
     color: #ffffff;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-}
-
-.cert-grid {
+  }
+  
+  .cert-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
-}
-
-.cert-card {
+  }
+  
+  .cert-card {
     background-color: #1b2236;
     border-radius: 16px;
     padding: 25px 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     color: #d6d6d6;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cert-card:hover {
+  }
+  
+  .cert-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-}
-
-.cert-card h3 {
+  }
+  
+  .cert-card h3 {
     font-size: 20px;
     color: #ffffff;
     margin-bottom: 10px;
-}
-
-.cert-card p {
+  }
+  
+  .cert-card p {
     font-size: 16px;
     color: #cccccc;
-}
-
+  }
+  
+  .cert-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
 
 
 
